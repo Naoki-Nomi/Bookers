@@ -36,11 +36,11 @@
 
 <%= form_with model:@book, url:'/books', local:true do |f| %>
   <div class="field">
-    <label for="book_title"><%= f.label :title, "Title" %></label>
+    <label for="book_title"><%= f.label :title %></label>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <label for="book_body"><%= f.label :body, "Body" %></label>
+    <label for="book_body"><%= f.label :body %></label>
     <%= f.text_area :body %>
   </div>
   <div class="actions">
